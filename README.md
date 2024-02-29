@@ -4,9 +4,9 @@
 ## Взлом через ввод пароля
 В программе easy.com (исходник - easy.asm) находится код, который должен был взломать [@OgKisque](https://github.com/ogkisque/hacking). Буффер лежит в месте в памяти, где находится код самой программы, таким образом, переполняя его, можно было подменить байт-код и просто сделать jmp на место, которое печатает, что доступ разрешен. Программа [@OgKisque](https://github.com/ogkisque/hacking) (buffer_crack/ogkisque.com) имела такую же уязвимость, которую я использовал аналогичным образом (подаваемый на вход файле: buffer_crack/ogkisque.txt).
 
-![pic1](https://github.com/vvit19/CrackMe/tree/main/pictures/pic1.png)
+![pic1](https://github.com/vvit19/CrackMe/blob/main/pictures/pic1.png)
 
 ## Взлом через бинарный патч (таблетку)
 Немного проще совершить взлом через бинарный патч (binpatch/binpatch.cpp), данная программа просто меняет offset в самом первом jmp из байт-кода (binpatch/arseasy.com) на offset в место, которое печатает, что доступ разрешен.
 
-![pic1](https://github.com/vvit19/CrackMe/tree/main/pictures/pic2.png)
+![pic2](https://github.com/vvit19/CrackMe/blob/main/pictures/pic2.png)
